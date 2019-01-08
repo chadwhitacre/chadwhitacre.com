@@ -73,6 +73,7 @@ A.headshot IMG {
     vertical-align: top;
     font-weight: bold;
     white-space: nowrap;
+    width: 30%;
 }
 .accomplishments TH SPAN {
     font-size: smaller;
@@ -85,7 +86,7 @@ A.headshot IMG {
 .contact {
     list-style: none;
     display: block;
-    width: 144pt;
+    width: 192pt;
     margin: 48pt auto 0;
     padding: 0;
 }
