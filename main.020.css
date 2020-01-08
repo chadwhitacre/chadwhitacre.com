@@ -80,13 +80,19 @@ A.headshot IMG {
     font-weight: normal;
     display: block;
 }
+.accomplishments TH SPAN.maybe-hide {
+    display: block;
+}
+.accomplishments TH SPAN.maybe-show {
+    display: none;
+}
 .accomplishments TD {
     padding: 0 0 1em 1em;
 }
 .contact {
     list-style: none;
     display: block;
-    width: 144pt;
+    width: 192pt;
     margin: 48pt auto 0;
     padding: 0;
 }
@@ -118,6 +124,12 @@ A.headshot IMG {
         display: block;
     }
     .accomplishments TH SPAN {
+        display: inline-block;
+    }
+    .accomplishments TH SPAN.maybe-hide {
+        display: none;
+    }
+    .accomplishments TH SPAN.maybe-show{
         display: inline-block;
     }
     .accomplishments TH SPAN::before {
