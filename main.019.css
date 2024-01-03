@@ -1,137 +1,178 @@
 BODY {
-    margin: 0;
-    padding: 0;
-    background: #E6DBB5;
-    font: normal 12pt/17pt "Times New Roman", serif;
-    color: #333;
+  margin: 0;
+  padding: 0;
+  background: #e6dbb5;
+  font:
+    normal 12pt/17pt "Times New Roman",
+    serif;
+  color: #333;
 }
 
 DIV#blue {
-    position: fixed;
-    background: #e5eff9;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 67vh;
-    z-index: -1;
-    top: 0;
-    left: 0;
+  position: fixed;
+  background: #e5eff9;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 67vh;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 
 DIV#post {
-    background: white;
-    border: 1px solid #CCC;
-    box-shadow: 0px 5px 5px #999;
-    margin: 33vh auto 24pt;
-    padding: 0;
-    width: 800px;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 5px 5px #999;
+  margin: 33vh auto 24pt;
+  padding: 0;
+  width: 800px;
 }
 DIV#post-padding {
-    padding: 24vh 96pt 12vh;
+  padding: 24vh 96pt 12vh;
 }
 
 H1 {
-    font: normal 18pt/24pt "Times New Roman", serif;
-    margin: 0 0 0.5em;
-    padding: 0;
-    text-align: center;
+  font:
+    normal 18pt/24pt "Times New Roman",
+    serif;
+  margin: 0 0 0.5em;
+  padding: 0;
+  text-align: center;
 }
 H2 {
-    font: normal 16pt/20pt "Times New Roman", serif;
-    margin: 2em 0 0.5em;
-    padding: 0;
-    text-align: center;
+  font:
+    normal 16pt/20pt "Times New Roman",
+    serif;
+  margin: 2em 0 0.5em;
+  padding: 0;
+  text-align: center;
 }
 P {
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 .nowrap {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 A.headshot {
-    display: block;
-    position: absolute;
-    top: 16.5vh;
-    width: 100%;
+  display: block;
+  position: absolute;
+  top: 16.5vh;
+  width: 100%;
 }
 A.headshot IMG {
-    width: 33vh;
-    border-radius: 16.5vh;
-    border: none;
-    margin: 0 auto;
-    display: block;
-    box-shadow: 0px 5px 5px #999;
+  width: 33vh;
+  border-radius: 16.5vh;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0px 5px 5px #999;
 }
 .accomplishments {
-    list-style: none;
+  list-style: none;
 }
 .accomplishments TH {
-    text-align: left;
-    vertical-align: top;
-    font-weight: bold;
-    white-space: nowrap;
-    width: 30%;
+  text-align: left;
+  vertical-align: top;
+  font-weight: bold;
+  white-space: nowrap;
+  width: 30%;
 }
 .accomplishments TH SPAN {
-    font-size: smaller;
-    font-weight: normal;
-    display: block;
+  font-size: smaller;
+  font-weight: normal;
+  display: block;
 }
 .accomplishments TD {
-    padding: 0 0 1em 1em;
+  padding: 0 0 1em 1em;
 }
 .contact {
-    list-style: none;
-    display: block;
-    width: 192pt;
-    margin: 48pt auto 0;
-    padding: 0;
+  list-style: none;
+  display: block;
+  width: 192pt;
+  margin: 48pt auto 0;
+  padding: 0;
 }
 .contact LI {
-    width: 48pt;
-    display: block;
-    float: left;
+  width: 48pt;
+  display: block;
+  float: left;
 }
 .contact LI A {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 .contact IMG {
-    width: 24pt;
+  width: 24pt;
 }
 @media screen and (max-width: 800px) {
-    DIV#post {
-        width: auto;
-        margin-bottom: 0;
-    }
-    DIV#post-padding {
-        padding-left: 16%;
-        padding-right: 16%;
-    }
-    .accomplishments TABLE {
-        display: block;
-    }
-    .accomplishments TH {
-        display: block;
-    }
-    .accomplishments TH SPAN {
-        display: inline-block;
-    }
-    .accomplishments TH SPAN::before {
-        content: '\00A0\2767\00A0\00A0';
-    }
-    .accomplishments TD {
-        display: block;
-        padding: 1em 0 2em;
-    }
+  DIV#post {
+    width: auto;
+    margin-bottom: 0;
+  }
+  DIV#post-padding {
+    padding-left: 16%;
+    padding-right: 16%;
+  }
+  .accomplishments TABLE {
+    display: block;
+  }
+  .accomplishments TH {
+    display: block;
+  }
+  .accomplishments TH SPAN {
+    display: inline-block;
+  }
+  .accomplishments TH SPAN::before {
+    content: "\00A0\2767\00A0\00A0";
+  }
+  .accomplishments TD {
+    display: block;
+    padding: 1em 0 2em;
+  }
 }
-@media screen and (max-width: 700px) { DIV#post-padding { padding-left: 14%; padding-right: 14%; } }
-@media screen and (max-width: 650px) { DIV#post-padding { padding-left: 13%; padding-right: 13%; } }
-@media screen and (max-width: 600px) { DIV#post-padding { padding-left: 12%; padding-right: 12%; } }
-@media screen and (max-width: 550px) { DIV#post-padding { padding-left: 11%; padding-right: 11%; } }
-@media screen and (max-width: 500px) { DIV#post-padding { padding-left: 10%; padding-right: 10%; } }
-@media screen and (max-width: 450px) { DIV#post-padding { padding-left:  9%; padding-right:  9%; } }
-@media screen and (max-width: 400px) { DIV#post-padding { padding-left:  8%; padding-right:  8%; } }
+@media screen and (max-width: 700px) {
+  DIV#post-padding {
+    padding-left: 14%;
+    padding-right: 14%;
+  }
+}
+@media screen and (max-width: 650px) {
+  DIV#post-padding {
+    padding-left: 13%;
+    padding-right: 13%;
+  }
+}
+@media screen and (max-width: 600px) {
+  DIV#post-padding {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+}
+@media screen and (max-width: 550px) {
+  DIV#post-padding {
+    padding-left: 11%;
+    padding-right: 11%;
+  }
+}
+@media screen and (max-width: 500px) {
+  DIV#post-padding {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media screen and (max-width: 450px) {
+  DIV#post-padding {
+    padding-left: 9%;
+    padding-right: 9%;
+  }
+}
+@media screen and (max-width: 400px) {
+  DIV#post-padding {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
