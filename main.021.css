@@ -53,6 +53,12 @@ P {
   padding: 0;
   text-align: center;
 }
+P.bio {
+  margin-bottom: 1em;
+}
+P.bio .third {
+  display: none;
+}
 .nowrap {
   white-space: nowrap;
 }

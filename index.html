@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      @import url("/main.020.css");
+      @import url("/main.021.css");
     </style>
     <title>Chad Whitacre</title>
   </head>
@@ -15,6 +16,72 @@
         <h1>Greetings!</h1>
 
         <p>My name is Chad Whitacre, and this is my homepage.</p>
+
+        <h2>Bio &amp; Blog</h2>
+
+        <div style="text-align: center; margin: 0 0 1em">
+          <label for="first"
+            ><input type="radio" name="person" id="first" checked /> First
+            Person</label
+          >
+          &nbsp;
+          <label for="third"
+            ><input type="radio" name="person" id="third" /> Third Person</label
+          >
+        </div>
+
+        <script defer>
+          function $(s) {
+            return document.querySelectorAll(s);
+          }
+          $("input[type=radio]").forEach((obj) => {
+            obj.onchange = function (e) {
+              if (!e.currentTarget.checked) {
+                return;
+              }
+              var which = e.target.id;
+              var other = which === "first" ? "third" : "first";
+              $(`.bio .${which}`).forEach((el) => {
+                el.style.display = "inline";
+              });
+              $(`.bio .${other}`).forEach((el) => {
+                el.style.display = "none";
+              });
+            };
+          });
+        </script>
+
+        <p class="bio" style="text-align: justify">
+          <span class="first">I</span
+          ><span class="third">Chad Whitacre</span> got
+          <span class="first">my</span><span class="third">his</span> start in
+          Open Source in 2001. <span class="first">I</span
+          ><span class="third">He</span> participated in the Python web
+          development boom of the 2000s that gave rise to Django and Flask
+          (<span class="first">my</span><span class="third">his</span> own
+          contribution was <a href="https://aspen.io/">Aspen</a>). Along the
+          way, <span class="first">I</span
+          ><span class="third">he</span> experienced first-hand the tension
+          between volunteer Open Source work and paid closed source work, so
+          <span class="first">I</span><span class="third">he</span> spent the
+          2010s on a crowdfunding startup <span class="first">I</span
+          ><span class="third">he</span> founded called
+          <a href="https://gratipay.com/">Gittip (later Gratipay)</a>. Now here
+          in the 2020s <span class="first">my</span
+          ><span class="third">his</span> role is Head of Open Source at
+          <a href="https://sentry.io/welcome/">Sentry</a>, an application
+          monitoring company with deep roots in the Open Source community.
+          <span class="first">I blog</span
+          ><span class="third">He blogs</span> at
+          <a href="https://openpath.chadwhitacre.com/">Open Path</a>.
+        </p>
+
+        <a href="https://openpath.chadwhitacre.com/"
+          ><img
+            src="/img/openpath.webp"
+            alt="Open Path, a blog about Open Source, tech, and society, by Chad Whitacre"
+            style="width: 100%"
+        /></a>
 
         <h2>Recent Work</h2>
 
@@ -134,8 +201,8 @@
 
         <ul class="contact">
           <li>
-            <a href="mailto:chad@zetaweb.com">
-              <img alt="chad@zetaweb.com" src="img/email.svg"
+            <a href="https://www.linkedin.com/in/chadwhitacre/">
+              <img alt="LinkedIn" src="img/linkedin.svg"
             /></a>
           </li>
           <li>
@@ -149,8 +216,8 @@
             /></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/chadwhitacre/">
-              <img alt="LinkedIn" src="img/linkedin.svg"
+            <a href="mailto:chad@zetaweb.com">
+              <img alt="chad@zetaweb.com" src="img/email.svg"
             /></a>
           </li>
         </ul>
