@@ -19,18 +19,21 @@
 
         <h2>Bio &amp; Blog</h2>
 
-        <div style="text-align: center; margin: 0 0 1em">
-          <label for="first"
-            ><input type="radio" name="person" id="first" checked /> First
+        <form style="text-align: center; margin: 0 0 1em">
+          <label
+            ><input type="radio" name="person" value="first" checked /> First
             Person</label
           >
           &nbsp;
-          <label for="third"
-            ><input type="radio" name="person" id="third" /> Third Person</label
+          <label
+            ><input type="radio" name="person" value="third" /> Third
+            Person</label
           >
-        </div>
+        </form>
 
         <script defer>
+          const form = document.forms[0];
+          form.elements["person"].value = "first";
           function $(s) {
             return document.querySelectorAll(s);
           }
@@ -39,7 +42,7 @@
               if (!e.currentTarget.checked) {
                 return;
               }
-              var which = e.target.id;
+              var which = e.target.value;
               var other = which === "first" ? "third" : "first";
               $(`.bio .${which}`).forEach((el) => {
                 el.style.display = "inline";
