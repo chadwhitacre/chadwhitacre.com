@@ -99,8 +99,8 @@ A.headshot IMG {
 .contact {
   list-style: none;
   display: block;
-  width: 192pt;
-  margin: 48pt auto 0;
+  width: 240pt;
+  margin: 24pt auto 0;
   padding: 0;
 }
 .contact LI {
@@ -114,6 +114,14 @@ A.headshot IMG {
 }
 .contact IMG {
   width: 24pt;
+}
+.blog {
+  display: block;
+  width: 67%;
+  margin: 24pt auto 0;
+}
+.blog img {
+  width: 100%;
 }
 @media screen and (max-width: 800px) {
   DIV#post {
