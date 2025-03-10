@@ -99,11 +99,12 @@ A.headshot IMG {
 .contact {
   list-style: none;
   display: block;
-  width: 288pt;
+  width: 144pt;
   margin: 24pt auto 0;
   padding: 0;
 }
 .contact LI {
+  height: 48pt;
   width: 48pt;
   display: block;
   float: left;
